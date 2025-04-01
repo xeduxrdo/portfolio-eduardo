@@ -1,0 +1,98 @@
+.section-habilidades {
+  scroll-margin-top: 50px;
+  height: calc(100vh - 50px);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-habilidades {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 10px;
+}
+
+.text-container {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.title-habilidades {
+  font-size: clamp(2.4rem, 2.832vw, 3.4rem);
+}
+
+.description-habilidades {
+  font-size: clamp(1.4rem, 1.563vw, 1.8rem);
+}
+
+.tech-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  gap: clamp(30px, 5vw, 60px);
+}
+
+.tech-card {
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px var(--shadow-color);
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+  width: clamp(120px, 20vw, 250px);
+}
+
+.img {
+  width: clamp(50px, 8vw, 100px);
+}
+
+.tech-card:hover {
+  box-shadow: 0px 0px 15px var(--shadow-color);
+  transform: translateY(-5px);
+}
+
+.html-style {
+  --shadow-color: rgba(255, 94, 0, 0.7);
+}
+.css-style {
+  --shadow-color: rgba(0, 128, 255, 0.7);
+}
+.javascript-style {
+  --shadow-color: rgba(247, 223, 30, 0.7);
+}
+.react-style {
+  --shadow-color: rgba(97, 219, 251, 0.7);
+}
+.nodejs-style {
+  --shadow-color: rgba(88, 160, 66, 0.7);
+}
+.github-style {
+  --shadow-color: rgba(255, 255, 255, 0.5);
+}
+.vscode-style {
+  --shadow-color: rgba(0, 150, 255, 0.7);
+}
+.figma-style {
+  --shadow-color: rgba(230, 74, 25, 0.7);
+}
+.affinityphoto-style {
+  --shadow-color: rgba(180, 100, 255, 0.7);
+}
+
+/*  RESPONSIVE  */
+@media screen and (width <= 640px) {
+  .section-habilidades {
+    align-items: initial;
+  }
+
+  .container-habilidades {
+    margin-top: 20px;
+  }
+
+  .title-habilidades,
+  .description-habilidades {
+    text-align: center;
+  }
+}

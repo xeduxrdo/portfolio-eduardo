@@ -1,0 +1,147 @@
+.section-educacion {
+  scroll-margin-top: 50px;
+  height: calc(100vh - 50px);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-educacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 10px;
+}
+
+.text-container-education {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.title-educacion {
+  font-size: clamp(2.4rem, 2.832vw, 3.4rem);
+}
+
+.description-educacion {
+  font-size: clamp(1.4rem, 1.563vw, 1.8rem);
+}
+
+.edu-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.uni-info {
+  border: 1px solid darkgreen;
+  margin-bottom: 10px;
+  font-size: clamp(1.4rem, 1.563vw, 1.8rem);
+  width: min(460px, 100%);
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #18181b;
+  transition: box-shadow 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.uni-info:hover {
+  box-shadow: 0px 4px 15px rgba(0, 129, 0, 0.4);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.check {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 5px;
+  font-size: clamp(1.2rem, 1.367vw, 1.5rem);
+}
+
+.check-card {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #090a0b;
+  color: green;
+}
+
+.fa-circle-check {
+  color: green;
+  font-size: clamp(1.2rem, 1.367vw, 1.5rem);
+}
+
+.certifications {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+}
+
+.cert-card {
+  border: 1px solid darkcyan;
+  font-size: clamp(1.4rem, 1.563vw, 1.8rem);
+  width: min(450px, 100%);
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #18181b;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.certification-link {
+  color: #d2d2d2;
+}
+
+.cert-details {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 5px;
+  font-size: clamp(1.2rem, 1.367vw, 1.5rem);
+}
+
+.details-card {
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #090a0b;
+  color: darkcyan;
+}
+
+.cert-card:hover {
+  box-shadow: 0px 4px 15px rgba(0, 139, 139, 0.4);
+}
+
+/*  RESPONSIVE  */
+@media screen and (width <= 640px) {
+  .section-educacion {
+    align-items: initial;
+  }
+
+  .container-educacion {
+    margin-top: 20px;
+  }
+
+  .title-educacion,
+  .description-educacion {
+    text-align: center;
+  }
+}
+
+@media screen and (width <= 515px) {
+  .fa-circle-check {
+    display: none;
+  }
+}

@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* Custom properties/variables  */
+:root {
+  /* --body-background: #181818; */
+  --body-background: #090a0b;
+  --main-background: #252525;
+  /* color-scheme: light dark; */
+}
+
+/*   
+    * The default text size in browsers is 16px. So, the default size 
+    of 1rem is 16px.  
+    * Setting a base font size of 10px give us easier rem calculations.
+    * 1rem = 10px, 1.5rem = 15px, 2rem = 20px (1rem means 1 time 
+      the size of the current font, 1.5rem means 1.5 times, 2rem means
+      2 times and so forth).
+    * rem = Relative to font-size of the root element.
+    * em = Relative to the font-size of the element (1em means 1 time 
+      the size of the current font, 1.5em means 1.5 times, 2em means
+      2 times and so forth).
+*/
+html {
+  font-size: 10px;
+  /* font-family: 'JetBrains Mono', monospace, system-ui; */
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Base reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+} */
+
+/* Base styles */
+body {
+  background-color: var(--body-background);
+  width: 100%;
+  min-height: 100vh;
+  font-size: 1.6rem;
+  /* color: #d2d2d2; */
+  color: #e6e6e6;
+  /* line-height: 1.5; */
+  /* border: 2px dashed #d2d2d2; */
+  /* 	display: flex; */
+  /* 	place-items: center; */
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
