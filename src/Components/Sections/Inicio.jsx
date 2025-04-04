@@ -24,7 +24,7 @@ function Inicio() {
         {/* Contenedor texto y botones */}
         <div className='text-btn-container'>
           <h1 className='title-inicio'>
-            <span className='no-bold'>Hola👋, soy</span> Test
+            <span className='no-bold'>Hola👋, soy</span> Eduardo
           </h1>
           <div className='type-container'>
             <p className='subtitle-inicio'>Frontend Developer</p>
