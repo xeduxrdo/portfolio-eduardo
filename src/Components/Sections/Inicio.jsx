@@ -59,7 +59,7 @@ function Inicio() {
 
             <button className='btn-cv'>
               <a
-                href='/cv-eduardogarcia.pdf'
+                href={`${import.meta.env.BASE_URL}/cv-eduardogarcia.pdf`}
                 target='_blank'
                 rel='noopener noreferrer'>
                 Ver CV
@@ -75,7 +75,7 @@ function Inicio() {
         <div>
           <img
             src={meart2}
-            alt='drawing of a person on a pc'
+            alt='me in anime version'
             className='img-coding'
           />
         </div>
